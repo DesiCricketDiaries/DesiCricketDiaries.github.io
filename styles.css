@@ -2,29 +2,30 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('Designer 6.png'); /* Add your background image */
-    background-size: cover; /* Cover the entire page */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating the image */
-    text-align: center; /* Center-aligns all text within the body */
-    color: #fff; /* Set a default text color that contrasts with the background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+/* Default styles for all pages */
+header, nav, footer {
+    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+    color: #fff;
 }
 
 header {
-    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background for better readability */
-    color: #fff;
     padding: 10px 0;
-    text-align: center;
 }
 
 nav {
-    background-color: rgba(68, 68, 68, 0.7); /* Semi-transparent background for better readability */
     overflow: hidden;
-    text-align: center; /* Center-aligns the navigation menu */
+    text-align: center;
 }
 
 nav a {
-    display: inline-block; /* Allows text and buttons to align horizontally */
+    display: inline-block;
     color: #fff;
     text-align: center;
     padding: 14px 16px;
@@ -41,9 +42,6 @@ main {
 }
 
 footer {
-    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background for better readability */
-    color: #fff;
-    text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
@@ -53,7 +51,7 @@ footer {
 ul {
     list-style-type: none;
     padding: 0;
-    text-align: center; /* Center-aligns list items */
+    text-align: center;
 }
 
 ul li {
@@ -61,10 +59,27 @@ ul li {
 }
 
 ul li a {
-    color: #fff; /* Ensure links are visible against the background */
+    color: #fff;
     text-decoration: none;
 }
 
 ul li a:hover {
     text-decoration: underline;
+}
+
+/* Page-specific backgrounds */
+.home {
+    background-image: url('home-background.jpg'); /* Replace with the home page background image */
+}
+
+.players {
+    background-image: url('players-background.jpg'); /* Replace with the players page background image */
+}
+
+.seasons-winners {
+    background-image: url('seasons-winners-background.jpg'); /* Replace with the seasons winners page background image */
+}
+
+.contact-us {
+    background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background image */
 }
