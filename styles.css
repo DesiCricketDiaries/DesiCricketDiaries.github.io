@@ -6,13 +6,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    color: #fff;
+    color: #000; /* Set default text color to black */
 }
 
 /* Default styles for all pages */
 header, nav, footer {
     background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
-    color: #fff;
+    color: #000; /* Set text color to black for better readability */
 }
 
 header {
@@ -26,7 +26,7 @@ nav {
 
 nav a {
     display: inline-block;
-    color: #fff;
+    color: #000; /* Set link color to black */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -59,7 +59,7 @@ ul li {
 }
 
 ul li a {
-    color: #fff;
+    color: #000; /* Set link color to black */
     text-decoration: none;
 }
 
