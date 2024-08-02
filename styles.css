@@ -90,17 +90,18 @@ footer {
     width: 100%;
 }
 
+
+/* Copyright Card Styles */
 .copyright-card {
     background-color: #333; /* Dark grey background */
     color: white; /* White text */
-    padding: 15px; /* Increased padding for more content space */
-    border-radius: 0; /* Remove rounded corners for a boxy look */
+    padding: 10px; /* Reduced padding */
+    border-radius: 5px; /* Rounded corners */
     box-shadow: none; /* Remove shadow to avoid floating effect */
-    width: 100%; /* Make the card fill the width of its container */
-    max-width: none; /* Remove max-width restriction */
-    margin: 0; /* Remove margin to align it with the container edges */
+    width: auto; /* Auto width to fit the content */
+    max-width: 100%; /* Ensure it doesn’t exceed the container width */
+    margin: 0; /* Remove margin */
 }
-
 /* Page-specific backgrounds */
 .home {
     background-image: url('IMG_3418.jpeg'); /* Replace with the home page background image */
