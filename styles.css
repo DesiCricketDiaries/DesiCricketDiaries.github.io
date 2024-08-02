@@ -110,15 +110,26 @@ footer {
 .players {
     background-image: url('IMG_3443.jpeg'); /* Replace with the players page background image */
 }
-.teams
-background-image: url('IMG_3444.jpeg'); /* Replace with the players page background image */
+
+.teams {
+    background-image: url('IMG_3444.jpeg'); /* Replace with the teams page background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
 }
+
 .seasons-winners {
     background-image: url('seasons-winners-background.jpg'); /* Replace with the seasons winners page background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
 }
 
 .contact-us {
     background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
 }
 
 /* Organization Photo */
