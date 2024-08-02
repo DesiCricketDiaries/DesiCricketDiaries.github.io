@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep background image fixed */
     text-align: center;
     color: white; /* Set default text color to white */
 }
@@ -39,6 +40,8 @@ nav a:hover {
 
 main {
     padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better readability */
+    position: relative; /* Required for stacking context */
 }
 
 footer {
@@ -70,22 +73,18 @@ ul li a:hover {
 /* Page-specific backgrounds */
 .home {
     background-image: url('IMG_3418.jpeg'); /* Replace with the home page background image */
-    background-attachment: fixed; /* Keep background image fixed */
 }
 
 .players {
     background-image: url('players-background.jpg'); /* Replace with the players page background image */
-    background-attachment: fixed; /* Keep background image fixed */
 }
 
 .seasons-winners {
     background-image: url('seasons-winners-background.jpg'); /* Replace with the seasons winners page background image */
-    background-attachment: fixed; /* Keep background image fixed */
 }
 
 .contact-us {
     background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background image */
-    background-attachment: fixed; /* Keep background image fixed */
 }
 
 /* Organization Photo */
