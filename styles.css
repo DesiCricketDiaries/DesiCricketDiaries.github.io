@@ -93,11 +93,12 @@ footer {
 .copyright-card {
     background-color: #333; /* Dark grey background */
     color: white; /* White text */
-    padding: 15px; /* Add some padding */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    max-width: 600px; /* Limit the width */
-    margin: 0 auto; /* Center the card */
+    padding: 20px; /* Increased padding for more content space */
+    border-radius: 0; /* Remove rounded corners for a boxy look */
+    box-shadow: none; /* Remove shadow to avoid floating effect */
+    width: 100%; /* Make the card fill the width of its container */
+    max-width: none; /* Remove max-width restriction */
+    margin: 0; /* Remove margin to align it with the container edges */
 }
 
 /* Page-specific backgrounds */
