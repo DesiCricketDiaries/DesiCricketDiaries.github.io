@@ -70,18 +70,22 @@ ul li a:hover {
 /* Page-specific backgrounds */
 .home {
     background-image: url('IMG_3418.jpeg'); /* Replace with the home page background image */
+    background-attachment: fixed; /* Keep background image fixed */
 }
 
 .players {
     background-image: url('players-background.jpg'); /* Replace with the players page background image */
+    background-attachment: fixed; /* Keep background image fixed */
 }
 
 .seasons-winners {
     background-image: url('seasons-winners-background.jpg'); /* Replace with the seasons winners page background image */
+    background-attachment: fixed; /* Keep background image fixed */
 }
 
 .contact-us {
     background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background image */
+    background-attachment: fixed; /* Keep background image fixed */
 }
 
 /* Organization Photo */
