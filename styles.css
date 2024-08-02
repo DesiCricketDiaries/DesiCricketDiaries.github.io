@@ -10,26 +10,22 @@ body {
     color: white; /* Set default text color to white */
 }
 
-/* Default styles for all pages */
-header, nav, footer {
+/* Header and Navigation Styles */
+header {
     background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
-    color: black; /* Set text color to black for better readability */
-    border: 2px solid white; /* White border */
+    color: white;
+    padding: 20px 0;
+    border-bottom: 2px solid white;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Neon glow effect */
 }
 
-/* Optional: Ensure borders and shadows apply to child elements if needed */
-header * , nav * , footer * {
-    color: black; /* Ensures all text inside these elements is black */
-}
-
-header {
-    padding: 10px 0;
+header h1 {
+    margin: 0;
 }
 
 nav {
+    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
     overflow: hidden;
-    text-align: center;
 }
 
 nav a {
@@ -38,6 +34,11 @@ nav a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-right: 1px solid white; /* Separator line */
+}
+
+nav a:last-child {
+    border-right: none; /* Remove the border for the last item */
 }
 
 nav a:hover {
@@ -45,36 +46,57 @@ nav a:hover {
     color: black;
 }
 
+/* Main Profile Section Styles */
 main {
     padding: 20px;
     background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better readability */
-    position: relative; /* Required for stacking context */
 }
 
+.profile {
+    background: rgba(51, 51, 51, 0.9); /* Darker background for the profile section */
+    color: white; /* White text */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    max-width: 800px; /* Max width for better layout */
+    margin: 20px auto; /* Centered horizontally */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white; /* White border around the photo */
+}
+
+.profile h1 {
+    margin: 10px 0;
+}
+
+.profile p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Footer Styles */
 footer {
-    padding: 10px 0;
+    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
-ul li a {
-    color: white; /* Set link color to white */
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline;
+.copyright-card {
+    background-color: #333; /* Dark grey background */
+    color: white; /* White text */
+    padding: 15px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    max-width: 600px; /* Limit the width */
+    margin: 0 auto; /* Center the card */
 }
 
 /* Page-specific backgrounds */
@@ -100,14 +122,4 @@ ul li a:hover {
     height: auto;
     margin: 0 auto; /* Center the photo */
     display: block; /* Ensure the photo is displayed as a block element */
-}
-/* Copyright Card Styles */
-.copyright-card {
-    background-color: #333; /* Dark grey background */
-    color: white; /* White text */
-    padding: 10px; /* Add some padding */
-    border-radius: 5px; /* Optional: Rounded corners */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional: Subtle shadow */
-    margin: 20px auto; /* Center the card with margin */
-    max-width: 600px; /* Optional: Limit the width */
 }
