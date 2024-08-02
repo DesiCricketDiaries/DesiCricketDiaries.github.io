@@ -76,10 +76,23 @@ ul li a:hover {
     background-image: url('players-background.jpg'); /* Replace with the players page background image */
 }
 
+
 .seasons-winners {
     background-image: url('seasons-winners-background.jpg'); /* Replace with the seasons winners page background image */
 }
 
 .contact-us {
     background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background image */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
 }
