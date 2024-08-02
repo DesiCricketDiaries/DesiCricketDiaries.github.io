@@ -94,3 +94,13 @@ ul li a:hover {
     margin: 0 auto; /* Center the photo */
     display: block; /* Ensure the photo is displayed as a block element */
 }
+card {
+    background-color: #00000080;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h2, .card p {
+    color: #a94442;
+}
