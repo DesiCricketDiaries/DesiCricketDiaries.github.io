@@ -13,7 +13,14 @@ body {
 /* Default styles for all pages */
 header, nav, footer {
     background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
-    color: #000; /* Set text color to black for better readability */
+    color: black; /* Set text color to black for better readability */
+    border: 2px solid white; /* White border */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Neon glow effect */
+}
+
+/* Optional: Ensure borders and shadows apply to child elements if needed */
+header * , nav * , footer * {
+    color: black; /* Ensures all text inside these elements is black */
 }
 
 header {
