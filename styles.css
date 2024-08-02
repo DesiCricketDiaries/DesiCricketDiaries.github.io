@@ -1,54 +1,22 @@
-/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep background image fixed */
+    text-align: center;
     color: white; /* Set default text color to white */
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Hide overflow */
-    background-color: #000; /* Fallback background color */
-}
-
-/* Page-specific backgrounds */
-.home {
-    background-image: url('IMG_3418.jpeg');
-}
-
-.players {
-    background-image: url('IMG_3443.jpeg');
-}
-
-.teams {
-    background-image: url('IMG_3444.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Full viewport height */
-}
-
-.seasons-winners {
-    background-image: url('seasons-winners-background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.contact-us {
-    background-image: url('contact-us-background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 /* Header and Navigation Styles */
 header {
-    background-color: rgba(51, 51, 51, 0.7);
+    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
     color: white;
     padding: 20px 0;
     border-bottom: 2px solid white;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Reduced shadow */
-    position: relative;
-    z-index: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Neon glow effect */
 }
 
 header h1 {
@@ -56,47 +24,44 @@ header h1 {
 }
 
 nav {
-    background-color: rgba(51, 51, 51, 0.7);
+    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
     overflow: hidden;
 }
 
 nav a {
     display: inline-block;
-    color: #00CFFF; /* Neon sky blue */
+    color: white; /* Set link color to white */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    border-right: 1px solid white;
+    border-right: 1px solid white; /* Separator line */
 }
 
 nav a:last-child {
-    border-right: none;
+    border-right: none; /* Remove the border for the last item */
 }
 
 nav a:hover {
     background-color: #ddd;
-    color: #00A8E0; /* Slightly darker blue for hover effect */
+    color: black;
 }
 
 /* Main Profile Section Styles */
 main {
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    min-height: 80vh;
-    box-sizing: border-box;
-    z-index: 2;
-    position: relative;
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better readability */
+    min-height: 80vh; /* Ensure main takes up enough space for footer */
+    box-sizing: border-box; /* Include padding in height calculations */
 }
 
-/* Profile Section Styles */
 .profile {
-    background: rgba(51, 51, 51, 0.9);
-    color: white;
-    border-radius: 10px;
+    background: rgba(51, 51, 51, 0.9); /* Darker background for the profile section */
+    color: white; /* White text */
+    border-radius: 10px; /* Rounded corners */
     padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Reduced shadow */
+    max-width: 800px; /* Max width for better layout */
+    margin: 20px auto; /* Centered horizontally */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
 .profile img {
@@ -104,7 +69,7 @@ main {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border: 5px solid white;
+    border: 5px solid white; /* White border around the photo */
 }
 
 .profile h1 {
@@ -118,58 +83,47 @@ main {
 
 /* Footer Styles */
 footer {
-    background-color: rgba(51, 51, 51, 0.7);
+    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
     color: white;
     padding: 20px;
-    position: relative;
-    width: 90%;
-    z-index: 1;
+    position: relative; /* Ensure it is not fixed */
+    width: 100%;
 }
 
-/* Copyright Card Styles */
 .copyright-card {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    width: auto;
-    max-width: 100%;
-    margin: 0;
+    background-color: #333; /* Dark grey background */
+    color: white; /* White text */
+    padding: 15px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    max-width: 600px; /* Limit the width */
+    margin: 0 auto; /* Center the card */
+}
+
+/* Page-specific backgrounds */
+.home {
+    background-image: url('IMG_3418.jpeg'); /* Replace with the home page background image */
+}
+
+.players {
+    background-image: url('IMG_3420.jpeg'); /* Replace with the players page background image */
+}
+
+.seasons-winners {
+    background-image: url('seasons-winners-background.jpg'); /* Replace with the seasons winners page background image */
+}
+
+.contact-us {
+    background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background image */
 }
 
 /* Organization Photo */
 .organization-photo {
-    max-width: 30%;
+    max-width: 30%; /* Adjust the max-width to make the photo smaller */
     height: auto;
-    margin: 0 auto;
-    display: block;
+    margin: 0 auto; /* Center the photo */
+    display: block; /* Ensure the photo is displayed as a block element */
 }
-
-/* Additional styles for teams section */
-.teams {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.team {
-    background: rgba(51, 51, 51, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 300px;
-    text-align: center;
-}
-
-.team h2 {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.team-photo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.a  {
+color: green;
 }
