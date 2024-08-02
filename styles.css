@@ -30,7 +30,7 @@ nav {
 
 nav a {
     display: inline-block;
-    color: white; /* Set link color to white */
+    color: #00CFFF; /* Neon sky blue */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -43,7 +43,7 @@ nav a:last-child {
 
 nav a:hover {
     background-color: #ddd;
-    color: black;
+    color: #00A8E0; /* Slightly darker blue for hover effect */
 }
 
 /* Main Profile Section Styles */
@@ -90,7 +90,6 @@ footer {
     width: 90%;
 }
 
-
 /* Copyright Card Styles */
 .copyright-card {
     background-color: #333; /* Dark grey background */
@@ -102,6 +101,7 @@ footer {
     max-width: 100%; /* Ensure it doesn’t exceed the container width */
     margin: 0; /* Remove margin */
 }
+
 /* Page-specific backgrounds */
 .home {
     background-image: url('IMG_3418.jpeg'); /* Replace with the home page background image */
@@ -139,7 +139,7 @@ footer {
     margin: 0 auto; /* Center the photo */
     display: block; /* Ensure the photo is displayed as a block element */
 }
-/* Additional styles for teams section */
+
 /* Additional styles for teams section */
 .teams {
     display: flex;
@@ -168,7 +168,4 @@ footer {
     object-fit: cover; /* Ensure image covers the square without distortion */
     border-radius: 10px; /* Optional: rounded corners */
     margin-bottom: 10px; /* Space between image and title */
-}
-a {
-  color: green;
 }
