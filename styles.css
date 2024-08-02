@@ -6,7 +6,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    color: white; /* Set default text color to black */
+    color: white; /* Set default text color to white */
 }
 
 /* Default styles for all pages */
@@ -26,7 +26,7 @@ nav {
 
 nav a {
     display: inline-block;
-    color: white; /* Set link color to black */
+    color: white; /* Set link color to white */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -59,7 +59,7 @@ ul li {
 }
 
 ul li a {
-    color: #white; /* Set link color to black */
+    color: white; /* Set link color to white */
     text-decoration: none;
 }
 
@@ -76,17 +76,18 @@ ul li a:hover {
     background-image: url('players-background.jpg'); /* Replace with the players page background image */
 }
 
-
 .seasons-winners {
     background-image: url('seasons-winners-background.jpg'); /* Replace with the seasons winners page background image */
 }
 
 .contact-us {
-    background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background 
-    .organization_photo{
-            max-width: 200px;
-    display: block;
-    margin: 0 auto 20px auto;
+    background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background image */
 }
-    
 
+/* Organization Photo */
+.organization-photo {
+    max-width: 80%; /* Adjust the max-width to make the photo smaller */
+    height: auto;
+    margin: 0 auto; /* Center the photo */
+    display: block; /* Ensure the photo is displayed as a block element */
+}
