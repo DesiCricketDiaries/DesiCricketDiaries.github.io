@@ -127,6 +127,7 @@ footer {
     display: block; /* Ensure the photo is displayed as a block element */
 }
 /* Additional styles for teams section */
+/* Additional styles for teams section */
 .teams {
     display: flex;
     flex-wrap: wrap;
@@ -145,4 +146,13 @@ footer {
 .team h2 {
     font-size: 24px;
     margin-top: 10px;
+}
+
+/* Square team photos */
+.team-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Ensure height matches width for a square shape */
+    object-fit: cover; /* Ensure image covers the square without distortion */
+    border-radius: 10px; /* Optional: rounded corners */
+    margin-bottom: 10px; /* Space between image and title */
 }
