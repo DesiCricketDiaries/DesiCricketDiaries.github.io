@@ -1,13 +1,46 @@
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Keep background image fixed */
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
     text-align: center;
     color: white; /* Set default text color to white */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow */
+}
+
+/* Page-specific backgrounds */
+.home {
+    background-image: url('IMG_3418.jpeg'); /* Replace with the home page background image */
+}
+
+.players {
+    background-image: url('IMG_3443.jpeg'); /* Replace with the players page background image */
+}
+
+.teams {
+    background-image: url('IMG_3444.jpeg'); /* Replace with the teams page background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 100vh; /* Full viewport height */
+}
+
+.seasons-winners {
+    background-image: url('seasons-winners-background.jpg'); /* Replace with the seasons winners page background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.contact-us {
+    background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
 }
 
 /* Header and Navigation Styles */
@@ -17,6 +50,8 @@ header {
     padding: 20px 0;
     border-bottom: 2px solid white;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Neon glow effect */
+    position: relative; /* Make sure header is positioned correctly */
+    z-index: 1; /* Ensure header is above other content */
 }
 
 header h1 {
@@ -52,8 +87,11 @@ main {
     background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better readability */
     min-height: 80vh; /* Ensure main takes up enough space for footer */
     box-sizing: border-box; /* Include padding in height calculations */
+    z-index: 2; /* Ensure main content is above the background */
+    position: relative; /* Make sure content is positioned correctly */
 }
 
+/* Profile Section Styles */
 .profile {
     background: rgba(51, 51, 51, 0.9); /* Darker background for the profile section */
     color: white; /* White text */
@@ -88,6 +126,7 @@ footer {
     padding: 20px;
     position: relative; /* Ensure it is not fixed */
     width: 90%;
+    z-index: 1; /* Ensure footer is above the background */
 }
 
 /* Copyright Card Styles */
@@ -100,36 +139,6 @@ footer {
     width: auto; /* Auto width to fit the content */
     max-width: 100%; /* Ensure it doesn’t exceed the container width */
     margin: 0; /* Remove margin */
-}
-
-/* Page-specific backgrounds */
-.home {
-    background-image: url('IMG_3418.jpeg'); /* Replace with the home page background image */
-}
-
-.players {
-    background-image: url('IMG_3443.jpeg'); /* Replace with the players page background image */
-}
-
-.teams {
-    background-image: url('IMG_3444.jpeg'); /* Replace with the teams page background image */
-    background-size: cover; /* Ensure the image covers the entire background */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-}
-
-.seasons-winners {
-    background-image: url('seasons-winners-background.jpg'); /* Replace with the seasons winners page background image */
-    background-size: cover; /* Ensure the image covers the entire background */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-}
-
-.contact-us {
-    background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background image */
-    background-size: cover; /* Ensure the image covers the entire background */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
 }
 
 /* Organization Photo */
