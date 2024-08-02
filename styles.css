@@ -89,7 +89,7 @@ ul li a:hover {
 
 /* Organization Photo */
 .organization-photo {
-    max-width: 80%; /* Adjust the max-width to make the photo smaller */
+    max-width: 30%; /* Adjust the max-width to make the photo smaller */
     height: auto;
     margin: 0 auto; /* Center the photo */
     display: block; /* Ensure the photo is displayed as a block element */
