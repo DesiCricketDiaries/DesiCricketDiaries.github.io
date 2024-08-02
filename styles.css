@@ -85,9 +85,9 @@ main {
 footer {
     background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
     color: white;
-    padding: 23px;
+    padding: 20px;
     position: relative; /* Ensure it is not fixed */
-    width: 80%;
+    width: 90%;
 }
 
 
