@@ -82,17 +82,11 @@ ul li a:hover {
 }
 
 .contact-us {
-    background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background image */
+    background-image: url('contact-us-background.jpg'); /* Replace with the contact us page background 
+    .organization_photo{
+            max-width: 200px;
+    display: block;
+    margin: 0 auto 20px auto;
 }
-/* Responsive Design */
-@media (max-width: 768px) {
-    .gallery-item {
-        width: calc(50% - 20px);
-    }
-}
+    
 
-@media (max-width: 480px) {
-    .gallery-item {
-        width: 100%;
-    }
-}
