@@ -153,8 +153,8 @@ a:active {
 }
 /* styles.css */
 
-.contact-us-img {
-    width: 24px; /* Adjust size as needed */
-    height: 24px; /* Adjust size as needed */
+.contact-us-img img {
+    width: 16px; /* Adjust size as needed */
+    height: 16px; /* Adjust size as needed */
     margin: 5px; /* Optional: adds space around icons */
 }
