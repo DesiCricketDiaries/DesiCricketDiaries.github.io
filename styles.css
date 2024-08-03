@@ -5,18 +5,18 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Keep background image fixed */
+    background-attachment: fixed;
     text-align: center;
-    color: white; /* Set default text color to white */
+    color: white;
 }
 
 /* Header and Navigation Styles */
 header {
-    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+    background-color: rgba(51, 51, 51, 0.7);
     color: white;
     padding: 20px 0;
     border-bottom: 2px solid white;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Neon glow effect */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 header h1 {
@@ -24,21 +24,21 @@ header h1 {
 }
 
 nav {
-    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+    background-color: rgba(51, 51, 51, 0.7);
     overflow: hidden;
 }
 
 nav a {
     display: inline-block;
-    color: white; /* Set link color to white */
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    border-right: 1px solid white; /* Separator line */
+    border-right: 1px solid white;
 }
 
 nav a:last-child {
-    border-right: none; /* Remove the border for the last item */
+    border-right: none;
 }
 
 nav a:hover {
@@ -46,121 +46,126 @@ nav a:hover {
     color: black;
 }
 
+/* Scrolling Images */
+.scrolling-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.scrolling-images img {
+    height: 100%;
+    margin-right: 10px;
+    animation: scroll 10s linear infinite;
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /* Main Profile Section Styles */
 main {
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better readability */
-    min-height: 80vh; /* Ensure main takes up enough space for footer */
-    box-sizing: border-box; /* Include padding in height calculations */
+    background: rgba(0, 0, 0, 0.5);
+    min-height: 80vh;
+    box-sizing: border-box;
 }
 
-.profile {
-    background: rgba(51, 51, 51, 0.9); /* Darker background for the profile section */
-    color: white; /* White text */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px;
-    max-width: 800px; /* Max width for better layout */
-    margin: 20px auto; /* Centered horizontally */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-}
-
-.profile img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 5px solid white; /* White border around the photo */
-}
-
-.profile h1 {
-    margin: 10px 0;
-}
-
-.profile p {
-    font-size: 18px;
-    margin: 10px 0;
+.organization-photo {
+    max-width: 30%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Footer Styles */
 footer {
-    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+    background-color: rgba(51, 51, 51, 0.7);
     color: white;
     padding: 20px;
-    position: relative; /* Ensure it is not fixed */
+    position: relative;
     width: 90%;
 }
 
 .copyright-card {
-    background-color: #333; /* Dark grey background */
-    color: white; /* White text */
-    padding: 15px; /* Add some padding */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    max-width: 600px; /* Limit the width */
-    margin: 0 auto; /* Center the card */
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Page-specific backgrounds */
 .home {
-    background-image: url('IMG_3418.jpeg'); /* Replace with the home page background image */
+    background-image: url('IMG_3418.jpeg');
 }
 
 .players {
-    background-image: url('IMG_3443.jpeg'); /* Replace with the players page background image */
+    background-image: url('IMG_3443.jpeg');
 }
 
 .seasons-winners {
-    background-image: url('IMG_3449.jpeg'); /* Replace with the seasons winners page background image */
+    background-image: url('IMG_3449.jpeg');
 }
 
 .contact-us {
-    background-image: url('IMG_3451.jpeg'); /* Replace with the contact us page background image */
+    background-image: url('IMG_3451.jpeg');
 }
 
-/* Organization Photo */
-.organization-photo {
-    max-width: 30%; /* Adjust the max-width to make the photo smaller */
-    height: auto;
-    margin: 0 auto; /* Center the photo */
-    display: block; /* Ensure the photo is displayed as a block element */
-}
+/* Link Styles */
 a {
-  color: green;
+    color: green;
 }
 
 a:hover {
-  color: darkgreen;
+    color: darkgreen;
 }
 
 a:visited {
-  color: lightgreen;
+    color: lightgreen;
 }
 
 a:active {
-  color: limegreen;
+    color: limegreen;
 }
+
 /* Adjust container for team images */
 .team-photos {
-    display: flex; /* Use flexbox to align items in a row */
-    justify-content: center; /* Center align items horizontally */
-    align-items: center; /* Center align items vertically */
-    gap: 10px; /* Add space between images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .team-photos img {
-    max-width: 100px; /* Set the maximum width for the images */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100px;
+    height: auto;
 }
-/* styles.css */
 
+/* Contact Us Images */
 .contact-us-img {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center align items horizontally */
-    align-items: center; /* Center align items vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-us-img img {
-    width: 24px; /* Adjust size as needed */
-    height: 24px; /* Adjust size as needed */
-    margin: 5px; /* Adds space around icons */
+    width: 24px;
+    height: 24px;
+    margin: 5px;
 }
