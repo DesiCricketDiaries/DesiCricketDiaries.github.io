@@ -63,7 +63,7 @@ nav a:hover {
 .scrolling-images img {
     height: 100%;
     margin-right: 10px;
-    animation: scroll 10s linear infinite;
+    animation: scroll 10h linear infinite;
 }
 
 /* Keyframes for scrolling effect */
