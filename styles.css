@@ -124,6 +124,18 @@ footer {
     margin: 0 auto; /* Center the photo */
     display: block; /* Ensure the photo is displayed as a block element */
 }
-.a  {
-color: green;
+a {
+  color: green;
+}
+
+a:hover {
+  color: darkgreen;
+}
+
+a:visited {
+  color: lightgreen;
+}
+
+a:active {
+  color: limegreen;
 }
