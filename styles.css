@@ -153,8 +153,14 @@ a:active {
 }
 /* styles.css */
 
+.contact-us-img {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+}
+
 .contact-us-img img {
-    width: 16px; /* Adjust size as needed */
-    height: 16px; /* Adjust size as needed */
-    margin: 5px; /* Optional: adds space around icons */
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    margin: 5px; /* Adds space around icons */
 }
