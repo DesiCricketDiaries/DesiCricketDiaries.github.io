@@ -175,6 +175,18 @@ a:active {
 /* Profile Section Styles */
 
 
+/* Profile Section Styles */
+.profile {
+    background: rgba(51, 51, 51, 0.9); /* Darker background for the profile section */
+    color: white; /* White text */
+    border-radius: 10px; /* Rounded corners for the profile section */
+    padding: 20px;
+    max-width: 800px; /* Max width for better layout */
+    margin: 20px auto; /* Centered horizontally */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    text-align: center; /* Center text inside profile section */
+}
+
 .profile img {
     border-radius: 50%; /* Make the image circular */
     width: 150px; /* Set the width */
@@ -184,3 +196,11 @@ a:active {
     display: block; /* Ensure the image is a block element */
 }
 
+.profile h1 {
+    margin: 10px 0;
+}
+
+.profile p {
+    font-size: 18px;
+    margin: 10px 0;
+}
