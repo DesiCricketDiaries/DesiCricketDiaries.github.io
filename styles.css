@@ -139,3 +139,15 @@ a:visited {
 a:active {
   color: limegreen;
 }
+/* Adjust container for team images */
+.team-photos {
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    gap: 10px; /* Add space between images */
+}
+
+.team-photos img {
+    max-width: 100px; /* Set the maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+}
