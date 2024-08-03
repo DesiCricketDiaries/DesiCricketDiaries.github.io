@@ -171,3 +171,16 @@ a:active {
     height: 24px;
     margin: 5px;
 }
+
+/* Profile Section Styles */
+
+
+.profile img {
+    border-radius: 50%; /* Make the image circular */
+    width: 150px; /* Set the width */
+    height: 150px; /* Set the height */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is a block element */
+}
+
