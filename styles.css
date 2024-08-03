@@ -151,3 +151,10 @@ a:active {
     max-width: 100px; /* Set the maximum width for the images */
     height: auto; /* Maintain aspect ratio */
 }
+/* styles.css */
+
+.contact-us img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    margin: 5px; /* Optional: adds space around icons */
+}
