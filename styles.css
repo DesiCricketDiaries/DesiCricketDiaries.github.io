@@ -87,7 +87,7 @@ footer {
     color: white;
     padding: 20px;
     position: relative; /* Ensure it is not fixed */
-    width: 100%;
+    width: 90%;
 }
 
 .copyright-card {
@@ -106,7 +106,7 @@ footer {
 }
 
 .players {
-    background-image: url('IMG_3420.jpeg'); /* Replace with the players page background image */
+    background-image: url('IMG_3443.jpeg'); /* Replace with the players page background image */
 }
 
 .seasons-winners {
